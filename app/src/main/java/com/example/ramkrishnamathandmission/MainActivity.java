@@ -9,13 +9,11 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ToggleButton;
 
@@ -98,7 +96,6 @@ public class MainActivity extends Activity
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         try {
-            stopMusic();
             switch (position) {
                 case 0:
                     Intent intent = new Intent(MainActivity.this, RamkrishnaMathandMission.class);
@@ -155,7 +152,6 @@ public class MainActivity extends Activity
             }
         }
         catch (Exception e) {
-            Log.e("error on fragment", "creating the mainScreen");
         }
         finally {
 
