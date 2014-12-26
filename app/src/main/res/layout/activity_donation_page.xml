@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F00000"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentTop="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Donations"
+            android:id="@+id/radioButton1"
+            android:onClick="onlineDonation" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offline Donations"
+            android:id="@+id/radioButton2"
+            android:layout_alignTop="@+id/radioButton1"
+            android:layout_marginTop="35dp"
+            android:onClick="offlineDonation" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
