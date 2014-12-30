@@ -15,7 +15,7 @@ public class SriRamakrishna extends Activity {
         //Remove title bar
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        setContentView(R.layout.activity_sri_ramakrishna);
+        setContentView(R.layout.activity_emblem);
 
         webView = (WebView) findViewById(R.id.emblem_web);
         //Load emblem.html from local storage.

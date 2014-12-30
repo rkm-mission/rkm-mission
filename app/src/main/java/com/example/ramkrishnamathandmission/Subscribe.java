@@ -20,9 +20,9 @@ public class Subscribe extends Activity {
         //Remove title bar
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        setContentView(R.layout.activity_subscribe);
+        setContentView(R.layout.activity_emblem);
 
-        webView = (WebView) findViewById(R.id.subscribe_web);
+        webView = (WebView) findViewById(R.id.emblem_web);
 
         //Check for internet connection
         ConnectivityManager connectivityManager

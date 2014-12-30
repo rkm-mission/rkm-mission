@@ -15,9 +15,9 @@ public class SaradaDevi extends Activity {
         //Remove title bar
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        setContentView(R.layout.activity_sarada_devi);
+        setContentView(R.layout.activity_emblem);
 
-        webView = (WebView) findViewById(R.id.sarada_web);
+        webView = (WebView) findViewById(R.id.emblem_web);
         //Load emblem.html from local storage.
         webView.loadUrl("file:///android_asset/Sri_Sarada_Devi.html");
     }
