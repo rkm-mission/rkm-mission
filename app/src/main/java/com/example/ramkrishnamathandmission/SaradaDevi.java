@@ -19,7 +19,7 @@ public class SaradaDevi extends Activity {
 
         webView = (WebView) findViewById(R.id.sarada_web);
         //Load emblem.html from local storage.
-        webView.loadUrl("file:///android_asset/saradaDevi.html");
+        webView.loadUrl("file:///android_asset/Sri_Sarada_Devi.html");
     }
 
 }

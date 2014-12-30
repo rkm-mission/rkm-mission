@@ -18,7 +18,7 @@ public class BullTempleFestival extends Activity {
         setContentView(R.layout.activity_bull_temple_festival);
 
         webView = (WebView) findViewById(R.id.festival_bull_web);
-        webView.loadUrl("file:///android_asset/RKM_Bull_temple_festival_calender.html");
+        webView.loadUrl("file:///android_asset/RKM_Bull_temple_daily_routine.html");
     }
 
     @Override
