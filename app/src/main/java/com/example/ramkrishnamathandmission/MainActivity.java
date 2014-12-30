@@ -44,22 +44,8 @@ public class MainActivity extends Activity
 
         setContentView(R.layout.activity_main);
 
-        //toggle = (ToggleButton) findViewById(R.id.togglebutton);
         // start music on app launch
         startMusic();
-        //toggle.setChecked(true);
-
-        //toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-        //    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        //        if (isChecked) {
-        //            // The toggle is enabled
-        //            startMusic();
-        //        } else {
-        //            // The toggle is disabled
-        //            stopMusic();
-        //        }
-        //    }
-        //});
 
         Resources resource = getResources();
         nav_array = resource.getStringArray(R.array.nav_drawer_array);
