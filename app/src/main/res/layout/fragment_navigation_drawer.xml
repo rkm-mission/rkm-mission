@@ -9,4 +9,5 @@
     android:dividerHeight="2dp"
     android:headerDividersEnabled="true"
     android:footerDividersEnabled="true"
-    tools:context=".NavigationDrawerFragment" />
+    tools:context=".NavigationDrawerFragment"
+    android:drawSelectorOnTop="false" />

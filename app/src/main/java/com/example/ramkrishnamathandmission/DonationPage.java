@@ -32,7 +32,7 @@ public class DonationPage extends Activity {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        setContentView(R.layout.activity_branch_map_option);
+        setContentView(R.layout.activity_branch_donate_option);
         final Button button, button2;
 
         button = (Button) findViewById(R.id.button);
