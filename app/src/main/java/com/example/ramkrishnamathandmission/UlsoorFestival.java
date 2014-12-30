@@ -16,7 +16,7 @@ public class UlsoorFestival extends Activity {
         //Remove title bar
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        setContentView(R.layout.activity_festival);
+        setContentView(R.layout.activity_ulsoor_festival);
 
         webView = (WebView) findViewById(R.id.festival_ulsoor_web);
         webView.loadUrl("file:///android_asset/RKM_Ulsoor_Schedule.html");

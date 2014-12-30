@@ -48,13 +48,13 @@ public class Festival extends Activity {
                     switch (position) {
                         case 0:
                             Intent intent = new Intent(Festival.this, UlsoorFestival.class);
-                            intent.putExtra("branch", position);
+                            //intent.putExtra("branch", position);
                             startActivity(intent);
                             break;
 
                         case 1:
                             Intent intent1 = new Intent(Festival.this, BullTempleFestival.class);
-                            intent1.putExtra("branch", position);
+                            //intent1.putExtra("branch", position);
                             startActivity(intent1);
                             break;
                     }

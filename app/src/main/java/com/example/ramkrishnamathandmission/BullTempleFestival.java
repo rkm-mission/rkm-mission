@@ -15,7 +15,7 @@ public class BullTempleFestival extends Activity {
         //Remove title bar
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        setContentView(R.layout.activity_festival);
+        setContentView(R.layout.activity_bull_temple_festival);
 
         webView = (WebView) findViewById(R.id.festival_bull_web);
         webView.loadUrl("file:///android_asset/RKM_Bull_temple_festival_calender.html");
