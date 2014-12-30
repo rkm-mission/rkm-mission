@@ -165,6 +165,20 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ramkrishnamathandmission.MainActivity" />
         </activity>
+        <activity
+            android:name=".OfflineDonation"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+        </activity>
+        <activity
+            android:name=".OnlineDonation"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
