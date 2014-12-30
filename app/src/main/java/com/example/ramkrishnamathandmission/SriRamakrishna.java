@@ -22,4 +22,19 @@ public class SriRamakrishna extends Activity {
         webView.loadUrl("file:///android_asset/sriRamkrishna.html");
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
 }

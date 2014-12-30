@@ -6,7 +6,7 @@ import android.view.Window;
 import android.webkit.WebView;
 
 
-public class ContactUs extends Activity {
+public class BullTempleFestival extends Activity {
     WebView webView;
 
     @Override
@@ -15,11 +15,10 @@ public class ContactUs extends Activity {
         //Remove title bar
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        setContentView(R.layout.activity_contact_us);
+        setContentView(R.layout.activity_festival);
 
-        webView = (WebView) findViewById(R.id.contact_web);
-        //Load emblem.html from local storage.
-        webView.loadUrl("file:///android_asset/contactUs.html");
+        webView = (WebView) findViewById(R.id.festival_bull_web);
+        webView.loadUrl("file:///android_asset/RKM_Bull_temple_festival_calender.html");
     }
 
     @Override

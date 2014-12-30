@@ -21,4 +21,19 @@ public class Vedanta extends Activity {
         //Load emblem.html from local storage.
         webView.loadUrl("file:///android_asset/vedanta.html");
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
 }

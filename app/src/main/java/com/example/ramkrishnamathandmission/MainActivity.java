@@ -10,12 +10,11 @@ import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.CompoundButton;
-import android.widget.ToggleButton;
 
 
 public class MainActivity extends Activity
@@ -37,8 +36,7 @@ public class MainActivity extends Activity
     //Create media player global variable
     MediaPlayer mPlayer;
 
-    // Toggle button
-    ToggleButton toggle;
+    private boolean soundon = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,22 +44,22 @@ public class MainActivity extends Activity
 
         setContentView(R.layout.activity_main);
 
-        toggle = (ToggleButton) findViewById(R.id.togglebutton);
+        //toggle = (ToggleButton) findViewById(R.id.togglebutton);
         // start music on app launch
         startMusic();
-        toggle.setChecked(true);
+        //toggle.setChecked(true);
 
-        toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    // The toggle is enabled
-                    startMusic();
-                } else {
-                    // The toggle is disabled
-                    stopMusic();
-                }
-            }
-        });
+        //toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        //    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        //        if (isChecked) {
+        //            // The toggle is enabled
+        //            startMusic();
+        //        } else {
+        //            // The toggle is disabled
+        //            stopMusic();
+        //        }
+        //    }
+        //});
 
         Resources resource = getResources();
         nav_array = resource.getStringArray(R.array.nav_drawer_array);
@@ -102,48 +100,46 @@ public class MainActivity extends Activity
                     startActivity(intent);
                     break;
                 case 1:
-                    break;
-                case 2:
                     intent = new Intent(MainActivity.this, Vedanta.class);
                     startActivity(intent);
                     break;
+                case 2:
+                    intent = new Intent(MainActivity.this, Festival.class);
+                    startActivity(intent);
+                    break;
                 case 3:
-                    break;
-                case 4:
-                    break;
-                case 5:
                     intent = new Intent(MainActivity.this, Ideology.class);
                     startActivity(intent);
                     break;
-                case 6:
+                case 4:
                     intent = new Intent(MainActivity.this, SriRamakrishna.class);
                     startActivity(intent);
                     break;
-                case 7:
+                case 5:
+                    intent = new Intent(MainActivity.this, SaradaDevi.class);
+                    startActivity(intent);
+                    break;
+                case 6:
                     intent = new Intent(MainActivity.this, SwamiVivekananda.class);
                     startActivity(intent);
                     break;
-                case 8:
+                case 7:
                     intent = new Intent(MainActivity.this, Emblem.class);
                     startActivity(intent);
                     break;
-                case 9:
-                    break;
-                case 10:
-                    intent = new Intent(MainActivity.this, MapActivity.class);
+                case 8:
+                    intent = new Intent(MainActivity.this, BranchesActivity.class);
                     startActivity(intent);
                     break;
-                case 11:
+                case 9:
                     intent = new Intent(MainActivity.this, DonationPage.class);
                     startActivity(intent);
                     break;
-                case 12:
-                    break;
-                case 13:
+                case 10:
                     intent = new Intent(MainActivity.this, Subscribe.class);
                     startActivity(intent);
                     break;
-                case 14:
+                case 11:
                     intent = new Intent(MainActivity.this, ContactUs.class);
                     startActivity(intent);
                     break;
@@ -163,56 +159,7 @@ public class MainActivity extends Activity
     }
 
     public void onSectionAttached(int number) {
-        switch (number) {
-            case 0:
-                mTitle = nav_array[0];
-                break;
-            case 1:
-                mTitle = nav_array[1];
-                break;
-            case 2:
-                mTitle = nav_array[2];
-                break;
-            case 3:
-                mTitle = nav_array[3];
-                break;
-            case 4:
-                mTitle = nav_array[4];
-                break;
-            case 5:
-                mTitle = nav_array[5];
-                break;
-            case 6:
-                mTitle = nav_array[6];
-                break;
-            case 7:
-                mTitle = nav_array[7];
-                break;
-            case 8:
-                mTitle = nav_array[8];
-                break;
-            case 9:
-                mTitle = nav_array[9];
-                break;
-            case 10:
-                mTitle = nav_array[10];
-                break;
-            case 11:
-                mTitle = nav_array[11];
-                break;
-            case 12:
-                mTitle = nav_array[12];
-                break;
-            case 13:
-                mTitle = nav_array[13];
-                break;
-            case 14:
-                mTitle = nav_array[14];
-                break;
-            default:
                 mTitle = getString(R.string.app_name);
-                break;
-        }
     }
 
     public void restoreActionBar() {
@@ -220,6 +167,12 @@ public class MainActivity extends Activity
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setTitle(mTitle);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
     }
 
     @Override
@@ -231,6 +184,13 @@ public class MainActivity extends Activity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            if (soundon) {
+                // switchoff sound
+                stopMusic();
+            }else {
+                // switch on sound
+                startMusic();
+            }
             return true;
         }
 
@@ -281,13 +241,13 @@ public class MainActivity extends Activity
         mPlayer = MediaPlayer.create(getApplicationContext(), R.raw.rkm_song);
         mPlayer.setLooping(true);
         mPlayer.start();//Start playing the music
-
+        soundon = true;
     }
     public void stopMusic(){
         //set the toggle button status to OFF
-        toggle.setChecked(false);
         if(mPlayer!=null && mPlayer.isPlaying()){//If music is playing already
             mPlayer.stop();//Stop playing the music
+            soundon = false;
         }
     }
 

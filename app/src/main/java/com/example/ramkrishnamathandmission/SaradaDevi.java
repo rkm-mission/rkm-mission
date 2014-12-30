@@ -6,8 +6,7 @@ import android.view.Window;
 import android.webkit.WebView;
 
 
-public class Emblem extends Activity {
-
+public class SaradaDevi extends Activity {
     WebView webView;
 
     @Override
@@ -16,27 +15,12 @@ public class Emblem extends Activity {
         //Remove title bar
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        setContentView(R.layout.activity_emblem);
+        setContentView(R.layout.activity_sarada_devi);
 
-        webView = (WebView) findViewById(R.id.emblem_web);
+        webView = (WebView) findViewById(R.id.sarada_web);
         //Load emblem.html from local storage.
-        webView.loadUrl("file:///android_asset/emblem.html");
-
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
+        webView.loadUrl("file:///android_asset/saradaDevi.html");
     }
 
 }
+

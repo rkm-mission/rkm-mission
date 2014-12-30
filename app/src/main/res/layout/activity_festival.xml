@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#33FF9900"
+    android:alpha="255" >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F00000"
+        android:layout_centerHorizontal="true" >
+        <ListView
+            android:id="@+id/listview_festival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:divider="#FFCC00"
+            android:dividerHeight="3dp"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+</RelativeLayout>

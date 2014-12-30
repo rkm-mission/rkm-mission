@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ramkrishnamathandmission.UlsoorFestival">
+
+    <WebView
+        android:id="@+id/festival_ulsoor_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_centerHorizontal="true"
+        android:scrollHorizontally="false"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/holo_blue_bright" />
+
+</RelativeLayout>

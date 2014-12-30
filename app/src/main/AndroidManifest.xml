@@ -33,12 +33,8 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <android:uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
 
@@ -58,44 +54,13 @@
         </activity>
         <activity
             android:name=".DonationPage"
-            android:label="@string/title_activity_donation_page"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ramkrishnamathandmission.MainActivity" />
         </activity>
         <activity
-            android:name=".OnlineDonation"
-            android:label="@string/title_activity_online_donation"
-            android:parentActivityName=".DonationPage" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.rkmission.DonationPage" />
-        </activity>
-        <activity
-            android:name=".OfflineDonation"
-            android:label="@string/title_activity_offline_donation"
-            android:parentActivityName=".DonationPage" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.rkmission.DonationPage" />
-        </activity>
-        <!-- PayPal Activities -->
-        <service
-            android:name="com.paypal.android.sdk.payments.PayPalService"
-            android:exported="false" />
-
-        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
-        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
-        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
-        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
-        <activity
-            android:name="io.card.payment.CardIOActivity"
-            android:configChanges="keyboardHidden|orientation" />
-        <activity android:name="io.card.payment.DataEntryActivity" />
-        <activity
             android:name=".Emblem"
-            android:label="@string/title_activity_emblem"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -103,7 +68,6 @@
         </activity>
         <activity
             android:name=".MapActivity"
-            android:label="@string/title_activity_map"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -119,7 +83,6 @@
 
         <activity
             android:name=".Vedanta"
-            android:label="@string/title_activity_vedanta"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -127,7 +90,6 @@
         </activity>
         <activity
             android:name=".SwamiVivekananda"
-            android:label="@string/title_activity_swami_vivekananda"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -135,7 +97,6 @@
         </activity>
         <activity
             android:name=".SriRamakrishna"
-            android:label="@string/title_activity_sri_ramakrishna"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -143,7 +104,6 @@
         </activity>
         <activity
             android:name=".Ideology"
-            android:label="@string/title_activity_ideology"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -151,7 +111,6 @@
         </activity>
         <activity
             android:name=".ContactUs"
-            android:label="@string/title_activity_contact_us"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -159,7 +118,6 @@
         </activity>
         <activity
             android:name=".RamkrishnaMathandMission"
-            android:label="@string/title_activity_rkmnm"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -167,7 +125,41 @@
         </activity>
         <activity
             android:name=".Subscribe"
-            android:label="@string/title_activity_subscribe"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Festival"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SaradaDevi"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BranchesActivity"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UlsoorFestival"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BullTempleFestival"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

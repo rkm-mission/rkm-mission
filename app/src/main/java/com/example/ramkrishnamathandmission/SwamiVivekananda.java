@@ -22,4 +22,18 @@ public class SwamiVivekananda extends Activity {
         webView.loadUrl("file:///android_asset/swamiVivekananda.html");
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
 }

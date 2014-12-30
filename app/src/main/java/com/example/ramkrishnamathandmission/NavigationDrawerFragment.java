@@ -119,10 +119,7 @@ public class NavigationDrawerFragment extends Fragment {
                         drawer_array[8],
                         drawer_array[9],
                         drawer_array[10],
-                        drawer_array[11],
-                        drawer_array[12],
-                        drawer_array[13],
-                        drawer_array[14]
+                        drawer_array[11]
                 }));
         //mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;
