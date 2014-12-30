@@ -38,8 +38,8 @@ public class DonationPage extends Activity {
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                setContentView(R.layout.activity_donation_page);
-                webView = (WebView) findViewById(R.id.donation_web);
+                setContentView(R.layout.activity_emblem);
+                webView = (WebView) findViewById(R.id.emblem_web);
                 //Load emblem.html from local storage.
                 webView.loadUrl("file:///android_asset/donate.html");
             }
@@ -49,7 +49,10 @@ public class DonationPage extends Activity {
         button2 = (Button) findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                // handle for bull temple
+                setContentView(R.layout.activity_emblem);
+                webView = (WebView) findViewById(R.id.emblem_web);
+                //Load emblem.html from local storage.
+                webView.loadUrl("file:///android_asset/donate_bull.html");
             }
 
         });
