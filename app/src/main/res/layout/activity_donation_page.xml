@@ -7,26 +7,24 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#F00000"
+        android:background="#F5D0A9"
         android:layout_gravity="center_vertical"
         android:layout_alignParentTop="true">
 
-        <RadioButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Online Donations"
-            android:id="@+id/radioButton1"
+            android:id="@+id/Button1"
             android:onClick="onlineDonation" />
 
-        <RadioButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Offline Donations"
-            android:id="@+id/radioButton2"
-            android:layout_alignTop="@+id/radioButton1"
-            android:layout_marginTop="35dp"
+            android:id="@+id/Button2"
+            android:layout_below="@+id/Button1"
             android:onClick="offlineDonation" />
-
 
     </RelativeLayout>
 
