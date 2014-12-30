@@ -7,7 +7,7 @@
     android:paddingTop="3dp"
     android:paddingBottom="3dp"
     tools:context="com.example.ramkrishnamathandmission.ContactUs"
-    android:background="#ffe39f28" >
+    android:background="#D3D3BD" >
 
     <WebView
         android:id="@+id/contact_web"
