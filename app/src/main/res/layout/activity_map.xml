@@ -13,8 +13,10 @@ xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_paren
     style="?android:attr/buttonStyleSmall"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentLeft="true"
-    android:text="Get Direction" />
+        android:text="Get Direction"
+        android:background="#643bb1ff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
