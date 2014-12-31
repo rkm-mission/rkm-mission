@@ -1,7 +1,12 @@
 package com.example.ramkrishnamathandmission;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -61,13 +66,33 @@ public class MapActivity extends Activity {
                             setContentView(R.layout.map_direction);
                             WebView myWebView = (WebView) findViewById(R.id.dir1);
 
-                            // enable javascript in webview
-                            myWebView.getSettings().setJavaScriptEnabled(true);
-                            myWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-                            // any src to specific destination
-                            direction_opened = true;
-                            map_options = 1;
-                            myWebView.loadUrl("http://maps.google.com/maps?f=d&hl=en&saddr=&daddr=Ramakrishna+Mutt,+Ulsoor,+Bengaluru,+Karnataka,+India&ie=UTF8&0&om=0&output=kml");
+                            //Check for internet connection
+                            ConnectivityManager connectivityManager
+                                    = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                            NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+                            if ((activeNetworkInfo != null) && activeNetworkInfo.isConnected()) {
+                                // enable javascript in webview
+                                myWebView.getSettings().setJavaScriptEnabled(true);
+                                myWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+                                // any src to specific destination
+                                direction_opened = true;
+                                map_options = 1;
+                                myWebView.loadUrl("http://maps.google.com/maps?f=d&hl=en&saddr=&daddr=Ramakrishna+Mutt,+Ulsoor,+Bengaluru,+Karnataka,+India&ie=UTF8&0&om=0&output=kml");
+                            } else {
+                                AlertDialog.Builder build = new AlertDialog.Builder(MapActivity.this);
+                                build.setTitle("");
+                                build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog,
+                                                        int which) {
+                                        dialog.dismiss();
+                                        finish();
+                                    }
+                                });
+                                build.setMessage("Need Internet Connection");
+                                AlertDialog errorD = build.create();
+                                errorD.show();
+                            }
                         }
                     });
                     break;
@@ -96,13 +121,33 @@ public class MapActivity extends Activity {
                             setContentView(R.layout.map_direction);
                             WebView myWebView = (WebView) findViewById(R.id.dir1);
 
-                            // enable javascript in webview
-                            myWebView.getSettings().setJavaScriptEnabled(true);
-                            myWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-                            // any src to specific destination
-                            direction_opened = true;
-                            map_options = 2;
-                            myWebView.loadUrl("http://maps.google.com/maps?f=d&hl=en&saddr=&daddr=12.948766,77.566807&ie=UTF8&0&om=0&output=kml");
+                            //Check for internet connection
+                            ConnectivityManager connectivityManager
+                                    = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                            NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+                            if ((activeNetworkInfo != null) && activeNetworkInfo.isConnected()) {
+                                // enable javascript in webview
+                                myWebView.getSettings().setJavaScriptEnabled(true);
+                                myWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+                                // any src to specific destination
+                                direction_opened = true;
+                                map_options = 2;
+                                myWebView.loadUrl("http://maps.google.com/maps?f=d&hl=en&saddr=&daddr=12.948766,77.566807&ie=UTF8&0&om=0&output=kml");
+                            } else {
+                                AlertDialog.Builder build = new AlertDialog.Builder(MapActivity.this);
+                                build.setTitle("");
+                                build.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog,
+                                                        int which) {
+                                        dialog.dismiss();
+                                        finish();
+                                    }
+                                });
+                                build.setMessage("Need Internet Connection");
+                                AlertDialog errorD = build.create();
+                                errorD.show();
+                            }
                         }
                     });
                     break;
