@@ -1,22 +1,11 @@
 package com.example.ramkrishnamathandmission;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
-import android.webkit.WebView;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 
 public class BranchesActivity extends Activity {
@@ -73,6 +62,12 @@ protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
+
+    Intent myIntent = getIntent();
+    int val = myIntent.getIntExtra("return_from_map", 0);
+    if (val == 1) {
+        finish();
+    }
 
     setContentView(R.layout.activity_branch_map_option);
     final Button button, button2;
