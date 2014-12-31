@@ -74,12 +74,6 @@ protected void onCreate(Bundle savedInstanceState) {
     this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 
-    Intent myIntent = getIntent();
-    int val = myIntent.getIntExtra("return_from_map", 0);
-    if (val == 1) {
-        finish();
-    }
-
     setContentView(R.layout.activity_branch_map_option);
     final Button button, button2;
 

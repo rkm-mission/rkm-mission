@@ -23,6 +23,7 @@ public class MapActivity extends Activity {
     static final LatLng RKMATH_BLR_BULL_TEMPLE = new LatLng(12.948766, 77.566807);
     private GoogleMap map;
     private boolean direction_opened = false;
+    private int map_options = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +67,7 @@ public class MapActivity extends Activity {
                             myWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
                             // any src to specific destination
                             direction_opened = true;
+                            map_options = 1;
                             myWebView.loadUrl("http://maps.google.com/maps?f=d&hl=en&saddr=&daddr=Ramakrishna+Mutt,+Ulsoor,+Bengaluru,+Karnataka,+India&ie=UTF8&0&om=0&output=kml");
                         }
                     });
@@ -100,6 +102,7 @@ public class MapActivity extends Activity {
                             myWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
                             // any src to specific destination
                             direction_opened = true;
+                            map_options = 2;
                             myWebView.loadUrl("http://maps.google.com/maps?f=d&hl=en&saddr=&daddr=12.948766,77.566807&ie=UTF8&0&om=0&output=kml");
                         }
                     });
@@ -111,17 +114,11 @@ public class MapActivity extends Activity {
 
     }
 
-
     @Override
-    protected void onResume() {
-
-        if (direction_opened == true) {
-            direction_opened = false;
-            Intent intent = new Intent(MapActivity.this, BranchesActivity.class);
-            intent.putExtra("return_from_map", 1);
-            startActivity(intent);
-        }
-        super.onResume();
-
+    protected void onRestart()
+    {
+        finish();
+        super.onRestart();
     }
+
 }
