@@ -7,7 +7,7 @@
     android:paddingTop="3dp"
     android:paddingBottom="3dp"
     android:background="#ffe39f28"
-    tools:context="com.example.ramkrishnamathandmission.Emblem">
+    tools:context="in.co.tsystem.ramkrishnamathbangalore.Emblem">
 
         <WebView
             android:id="@+id/emblem_web"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ramkrishnamathandmission" >
+    package="in.co.tsystem.ramkrishnamathbangalore" >
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <permission
@@ -45,7 +45,7 @@
         android:label="@string/app_name"
         android:theme="@style/MyTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="in.co.tsystem.ramkrishnamathbangalore.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,25 +54,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DonationPage"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.DonationPage"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".Emblem"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.Emblem"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".MapActivity"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.MapActivity"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <!-- Goolge API Key -->
         <meta-data
@@ -83,102 +83,102 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".Vedanta"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.Vedanta"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".SwamiVivekananda"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.SwamiVivekananda"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".SriRamakrishna"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.SriRamakrishna"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".Ideology"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.Ideology"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".ContactUs"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.ContactUs"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".RamkrishnaMathandMission"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.RamkrishnaMathandMission"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".Subscribe"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.Subscribe"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".Festival"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.Festival"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".SaradaDevi"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.SaradaDevi"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".BranchesActivity"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.BranchesActivity"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".UlsoorFestival"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.UlsoorFestival"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".BullTempleFestival"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.BullTempleFestival"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".UlsoorDonate"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.UlsoorDonate"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name=".BullTempleDonate"
-            android:parentActivityName=".MainActivity" >
+            android:name="in.co.tsystem.ramkrishnamathbangalore.BullTempleDonate"
+            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ramkrishnamathandmission.MainActivity" />
+                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
     </application>
 
