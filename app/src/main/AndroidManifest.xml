@@ -125,13 +125,6 @@
                 android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
         </activity>
         <activity
-            android:name="in.co.tsystem.ramkrishnamathbangalore.Subscribe"
-            android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="in.co.tsystem.ramkrishnamathbangalore.MainActivity" />
-        </activity>
-        <activity
             android:name="in.co.tsystem.ramkrishnamathbangalore.Festival"
             android:parentActivityName="in.co.tsystem.ramkrishnamathbangalore.MainActivity" >
             <meta-data

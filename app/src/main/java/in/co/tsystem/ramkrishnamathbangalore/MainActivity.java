@@ -120,10 +120,6 @@ public class MainActivity extends Activity
                     startActivity(intent);
                     break;
                 case 10:
-                    intent = new Intent(MainActivity.this, Subscribe.class);
-                    startActivity(intent);
-                    break;
-                case 11:
                     intent = new Intent(MainActivity.this, ContactUs.class);
                     startActivity(intent);
                     break;
